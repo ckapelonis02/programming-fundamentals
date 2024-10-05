@@ -13,7 +13,7 @@ object CourseFunctions extends App {
 		case (0, _) => Nil
 		case (x, a::tail) => a::take(x-1, tail)
 	}
-
+	
 	def skip(n: Int, L: List[Any]): List[Any] = (n, L) match {
 		case (_, Nil) => Nil
 		case (0, L) => L
